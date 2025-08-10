@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bangirul Storegame - Topup Games & Pulsa</title>
+  <meta name="description" content="Topup game, e-wallet, dan pulsa dengan cepat. Desain dark gaming modern." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">🎮</div>
+        <div class="brand-text">
+          <strong>Bangirul</strong>
+          <span>Storegame</span>
+        </div>
+      </div>
+
+      <div class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10.5" cy="10.5" r="7.5" stroke="currentColor" stroke-width="2"/></svg>
+        <input id="search-input" type="text" placeholder="Cari game atau produk..." />
+      </div>
+
+      <div class="actions">
+        <button class="badge"><span class="flag">🇮🇩</span><span class="sep"></span><span>IDR</span></button>
+        <button class="icon-btn" title="Keranjang">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 12.39A2 2 0 0 0 9.62 15h7.76a2 2 0 0 0 1.94-1.61L22 6H6"/></svg>
+        </button>
+        <button class="icon-btn" title="Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO / CAROUSEL -->
+      <section class="hero" aria-label="Banner">
+        <div class="slides" id="hero-slides">
+          <article class="slide is-active" style="--bg:url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1600&auto=format&fit=crop');">
+            <div class="slide-content">
+              <h1>Jual Script Topup Bot WhatsApp (Game)</h1>
+              <p>Automasi order topup di WhatsApp. Cepat, aman, dan mudah diintegrasikan.</p>
+              <a href="#popular" class="btn-primary">Lihat Produk</a>
+            </div>
+          </article>
+          <article class="slide" style="--bg:url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop');">
+            <div class="slide-content">
+              <h1>Topup Game Termurah</h1>
+              <p>Diskon spesial untuk Mobile Legends, Free Fire, PUBG Mobile, dan lainnya.</p>
+              <a href="#promo" class="btn-primary">Promo Hari Ini</a>
+            </div>
+          </article>
+        </div>
+        <div class="hero-dots" id="hero-dots"></div>
+        <button class="hero-nav prev" id="hero-prev" aria-label="Sebelumnya">‹</button>
+        <button class="hero-nav next" id="hero-next" aria-label="Berikutnya">›</button>
+      </section>
+
+      <!-- PROMO + COUNTDOWN -->
+      <section class="promo" id="promo">
+        <div class="promo-head">
+          <div class="promo-title">⚡ PROMO</div>
+          <div class="countdown" id="countdown">
+            <span id="cd-days">00</span><small>Hari</small>
+            <b>:</b>
+            <span id="cd-hours">00</span><small>Jam</small>
+            <b>:</b>
+            <span id="cd-mins">00</span><small>Menit</small>
+            <b>:</b>
+            <span id="cd-secs">00</span><small>Detik</small>
+          </div>
+        </div>
+        <p class="promo-sub">Jangan lewatkan penawaran terbatas kami!</p>
+        <div class="cards is-scroll">
+          <a class="product-card" href="#">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1606117331085-5760e3b58520?q=80&w=800&auto=format&fit=crop');"></div>
+            <div class="meta">
+              <div class="title">Mobile Legends</div>
+              <div class="subtitle">Weekly Diamond Pass</div>
+              <div class="stock">Tersisa: 100</div>
+              <div class="price"><span class="final">Rp 26.500</span> <span class="strike">Rp 27.456</span></div>
+            </div>
+          </a>
+          <a class="product-card" href="#">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1595681527561-1c1a5da760c9?q=80&w=800&auto=format&fit=crop');"></div>
+            <div class="meta">
+              <div class="title">Free Fire</div>
+              <div class="subtitle">70 Diamonds</div>
+              <div class="stock">Tersisa: 53</div>
+              <div class="price"><span class="final">Rp 11.900</span> <span class="strike">Rp 14.000</span></div>
+            </div>
+          </a>
+          <a class="product-card" href="#">
+            <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=800&auto=format&fit=crop');"></div>
+            <div class="meta">
+              <div class="title">PUBG Mobile</div>
+              <div class="subtitle">60 UC</div>
+              <div class="stock">Tersisa: 34</div>
+              <div class="price"><span class="final">Rp 15.500</span> <span class="strike">Rp 18.000</span></div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- POPULER SEKARANG -->
+      <section class="popular" id="popular">
+        <div class="section-head">
+          <div class="section-title">🔥 Populer Sekarang!</div>
+          <p>Beberapa produk yang paling populer saat ini.</p>
+        </div>
+        <div class="grid four">
+          <a class="mini-card" href="#"><div class="mini-thumb" style="background-image:url('https://images.unsplash.com/photo-1553484771-047a41d1c31d?q=80&w=800&auto=format&fit=crop');"></div><div class="mini-meta"><b>Mobile Legends</b><span>Moonton</span></div></a>
+          <a class="mini-card" href="#"><div class="mini-thumb" style="background-image:url('https://images.unsplash.com/photo-1542751371-1243c0d99dd3?q=80&w=800&auto=format&fit=crop');"></div><div class="mini-meta"><b>Free Fire</b><span>Garena</span></div></a>
+          <a class="mini-card" href="#"><div class="mini-thumb" style="background-image:url('https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=800&auto=format&fit=crop');"></div><div class="mini-meta"><b>PUBG Mobile</b><span>Tencent</span></div></a>
+          <a class="mini-card" href="#"><div class="mini-thumb" style="background-image:url('https://images.unsplash.com/photo-1613219465335-1a0f8f7d8c5e?q=80&w=800&auto=format&fit=crop');"></div><div class="mini-meta"><b>Genshin Impact</b><span>HoYoVerse</span></div></a>
+        </div>
+      </section>
+
+      <!-- TABS KATEGORI -->
+      <section class="tabs-wrap">
+        <div class="tabs">
+          <button class="tabs-nav" id="tab-prev" aria-label="Geser kiri">‹</button>
+          <div class="tabs-scroller" id="tabs-scroller">
+            <button class="chip is-active" data-tab="topup">Topup Games</button>
+            <button class="chip" data-tab="ewallet">E‑Wallet</button>
+            <button class="chip" data-tab="pulsa">Pulsa & Data</button>
+          </div>
+          <button class="tabs-nav" id="tab-next" aria-label="Geser kanan">›</button>
+        </div>
+
+        <div class="catalog" id="catalog">
+          <!-- content injected by JS based on selected tab -->
+        </div>
+      </section>
+
+      <!-- DAFTAR GAMES -->
+      <section class="games">
+        <div class="section-head">
+          <div class="section-title">Semua Game</div>
+        </div>
+        <div class="grid three" id="games-grid">
+          <!-- populated by JS -->
+        </div>
+      </section>
+    </main>
+
+    <!-- BOTTOM NAV -->
+    <nav class="bottom-nav">
+      <a class="bn-item is-active" href="#">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7"/><path d="M9 22V12h6v10"/></svg>
+        <span>Beranda</span>
+      </a>
+      <a class="bn-item" href="#popular">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09A1.65 1.65 0 0 0 11 3V3a2 2 0 1 1 4 0v.09c0 .67.39 1.27 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09c.62.24 1.06.84 1.06 1.54s-.44 1.3-1.06 1.54z"/></svg>
+        <span>Populer</span>
+      </a>
+      <a class="bn-item" href="#">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <span>Orders</span>
+      </a>
+    </nav>
+
+    <!-- CHAT FLOATING BUTTON -->
+    <button class="chat-btn" id="chat-btn">Chat CS</button>
+  </div>
+</body>
+</html>
